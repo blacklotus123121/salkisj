@@ -1,0 +1,69 @@
+:root {
+  --primary-color: #ff6b6b;
+  --text-color: #2c3e50;
+  --background-color: #fff0f3;
+  --pink-light: #ffe4e8;
+  --pink-medium: #ffd1dc;
+  --pink-dark: #ffb6c1;
+  font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-color);
+  background-image: 
+    radial-gradient(circle at 25px 25px, var(--pink-medium) 2%, transparent 0%),
+    radial-gradient(circle at 75px 75px, var(--pink-light) 2%, transparent 0%);
+  background-size: 100px 100px;
+  color: var(--text-color);
+  min-height: 100vh;
+  position: relative;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+  background: rgba(255, 224, 229, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(255, 107, 107, 0.1);
+  backdrop-filter: blur(4px);
+}
+
+.story-section {
+  background-color: var(--pink-light);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  border: 1px solid var(--pink-dark);
+}
+
+.donation-section {
+  background-color: var(--pink-light);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 3rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--pink-dark);
+}
+
+.qr-code-container {
+  background: var(--background-color);
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 400px;
+  border: 2px dashed var(--primary-color);
+}
+
+.donation-info {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  border: 1px solid var(--pink-dark);
+}
